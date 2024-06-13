@@ -1,6 +1,6 @@
 from datetime import datetime
 from sqlalchemy.orm import Session
-import models, schemas
+import models
 
 
 def insert_detection_result(db: Session, module_id: str, image_path: str, detection: str, confidence: float):
