@@ -23,7 +23,7 @@ if not cfg:
     raise Exception('Config file(config.ini) not found')
 
 module_id = config.get('system', 'module_id')
-image_path = cfg.get('system', 'image_path')
+image_path = config.get('system', 'image_path')
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
