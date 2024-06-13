@@ -1,6 +1,7 @@
-requests
-# opencv-contrib-python
-numpy>=1.20.0  # To ensure compatibility with OpenCV on Raspberry Pi.
+numpy==1.22.4  # To ensure compatibility with OpenCV on Raspberry Pi.
 opencv-python~=4.5.3.56
 tflite-support>=0.4.2
 protobuf>=3.18.0,<4
+configparser
+SQLAlchemy==2.0.30
+PyMySQL==1.1.1
