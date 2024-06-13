@@ -12,6 +12,6 @@ class ImageArchive(Base):
     module = Column(String(50))
     image_path = Column(String(255))
     detection = Column(String(100))
-    probability = Column(FLOAT(precision=5, scale=2))
+    confidence = Column(FLOAT(precision=5, scale=2))
     svr_dt = Column(DateTime, server_default=func.now(), index=True)
     __table_args__ = (Index('image_archive_ymd_idx', "yyyy", "mm", "dd"),)
